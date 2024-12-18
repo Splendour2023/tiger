@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('tiger.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Adjust text color to be readable on top of the image */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button.cta {
+    background-color: #f0c100;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button.cta:hover {
+    background-color: #d99b00;
+}
+
+.hero {
+    text-align: center;
+    background-image: url('https://example.com/hero-image.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+#features {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.feature {
+    padding: 20px;
+    text-align: center;
+    margin: 0 10px;
+    background-color: #000;
+    border-radius: 8px;
+    width: 200px;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    #features {
+        flex-direction: column;
+    }
+}
